@@ -8,13 +8,13 @@ import layout from '../layout'
 
 export const constantRoutes = [
     {
-        path: '/login',
+        path: '/',
         component: () => import('@/views/login/index'),
         name: 'login',
         meta: { title: '登录' }
     },
     {
-        path: '/',
+        path: '/home',
         component: layout,
         redirect: '/home',
         children: [
